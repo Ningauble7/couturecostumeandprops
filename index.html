@@ -10,8 +10,8 @@
   <meta name="theme-color" content="#712cf9">
   <style>
 
-    .carousel-inner img {
-        margin: auto;
+    .carousel-fade .carousel-item, .carousel-item img  {
+        max-height: 90vh;
     }
 
     .bd-placeholder-img {
@@ -110,51 +110,38 @@
       </nav>   
 
 <!-- Carousel -->
-  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
     </div>
+  
+    <!-- The slideshow/carousel -->
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="images/Fall-Costume.jpg" alt="Costumes-The-Four-Seasons" width="243" height="480" />
-        <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>-->
-        <div class="container">
-          <div class="carousel-caption text-start">
-            <h1>Fall</h1>
-            <p class="opacity-75"></p>
-            </div>
-        </div>
+        <img src="images/4Seasons-Mucha2.jpg" alt="Mucha-The-Four-Seasons" class="d-block">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Four Seasons by Alfons Mucha</h5>
+        </div>     
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Spring</h1>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-        <div class="container">
-          <div class="carousel-caption text-end">
-            <h1>Summer</h1>
-            <p></p>
-            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-          </div>
-        </div>
+        <img src="images/4Seasons-Costume2.jpg" alt="Costumes-The-Four-Seasons" class="d-block">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Costumes by Andrea Davis</h5>
+        </div>   
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
+  
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
     </button>
-  </div> 
+  </div>
   
 <div class="container mt-5">
   <div class="row">
